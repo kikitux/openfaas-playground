@@ -1,5 +1,5 @@
 ## config
-numnodes = 2
+numnodes = 5
 lan = "192.168.99"
 ## end config
 
@@ -22,6 +22,10 @@ export DOCKER_HOST=tcp://localhost:2375
 
 then run:
 docker node ls
+
+test it works:
+curl -d "hello" http://localhost:8080/function/func_echoit
+curl -d "" http://localhost:8080/function/nodeinfo
 
 building a new faas:
 cd playground
