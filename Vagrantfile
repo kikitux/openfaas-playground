@@ -63,8 +63,9 @@ Vagrant.configure("2") do |config|
       if i==1 
         faas.vm.provision "shell", path: "ops/faas1.sh", args: numnodes
         # port forward to easy access for docker and faas-cli
-        faas.vm.network "forwarded_port", guest: 2375, host: 2375
-        faas.vm.network "forwarded_port", guest: 8080, host: 8080
+        faas.vm.network "forwarded_port", guest: 2375, host: 2375 #docker
+        faas.vm.network "forwarded_port", guest: 8080, host: 8080 #openfaas ui
+        faas.vm.network "forwarded_port", guest: 9000, host: 9000 #portainer
         puts info if ARGV[0] == "status"
       end
     end
