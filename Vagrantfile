@@ -1,6 +1,5 @@
 ## config
-numnodes = 5
-lan = "192.168.99"
+numnodes = 2
 ## end config
 
 info = <<-'EOF'
@@ -40,6 +39,7 @@ go to the webpage and play: http://localhost:8080
 EOF
 
 ## don't modify
+lan = "192.168.99"
 Vagrant.configure("2") do |config|
   config.vm.box = "cbednarski/ubuntu-1604"
   #to avoid Inappropriate ioctl for device in messages
