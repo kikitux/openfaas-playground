@@ -16,6 +16,16 @@ vagrant up
 vagrant status
 ```
 
+## Number of nodes
+
+By default the cluster is made of 2 nodes, however you can [update this on Vagrantfile](https://github.com/kikitux/openfaas-playground/blob/master/Vagrantfile#L2) to have multiples nodes
+
+```
+## config
+numnodes = 5
+## end config
+```
+
 ## Long description of usage
 
 Once all the dependencies are installed, the following will happen:
