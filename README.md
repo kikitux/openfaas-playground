@@ -1,6 +1,8 @@
 # openfaas-playground
 a vagrant project to get openfaas on your laptop
 
+![photo](https://github.com/kikitux/openfaas-playground/raw/screenshots/playground1.png)
+
 dependencies:
 - virtualbox
 - vagrant
@@ -99,3 +101,14 @@ iilumy3xqznbp5hmuvimpmlg5 *   faas1               Ready               Active    
 todo
 
 ## extra stuff
+
+### portainer
+
+portainer is a ui to visualise and manage docker hosts and integrate with swarm.
+
+![cluster](https://github.com/kikitux/openfaas-playground/raw/screenshots/portainer4.png)
+
+head to [http://localhost:9000/](http://localhost:9000/) and setup the initial password
+
+
+
