@@ -25,7 +25,8 @@ then will create a swarm cluster, make the 2nd node join and install openfaas
 `vagrant up` creates the vms
 `vagrant status` will display the current status of the vms and some information
 
-```0  (master) $ vagrant status
+```
+0  (master) $ vagrant status
 
   ___                   _____           ____
  / _ \ _ __   ___ _ __ |  ___|_ _  __ _/ ___|
@@ -63,7 +64,8 @@ faas1                     running (virtualbox)
 This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
-0  (master) $ ```
+0  (master) $ 
+```
 
 
 ## Desctiption of whats here
