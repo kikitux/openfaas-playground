@@ -94,11 +94,9 @@ func_wordcount                	0              	1
 func_nodeinfo                 	0              	1    
 ```
 
-`export DOCKER_HOST=tcp://localhost:2375`
-
-`docker node ls`
-
+You can configure `DOCKER_HOST` variable so docker client on your computer can talk to the daemon on the vm
 ```
+export DOCKER_HOST=tcp://localhost:2375
 0  (master) $ docker node ls
 ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
 iilumy3xqznbp5hmuvimpmlg5 *   faas1               Ready               Active              Leader
@@ -106,9 +104,21 @@ iilumy3xqznbp5hmuvimpmlg5 *   faas1               Ready               Active    
 0  (master) $ 
 ```
 
-## Desctiption of whats here
+## desctiption of whats here
 
-todo
+Vagrant is a tool to create repeatable environments so the developer can focus on the code instead of the infrastructure.
+
+This project will do on start:
+- download vm template
+- configure ssh password less between the nodes
+- deploy guest, 2 by default, you can scale to more
+- install and configure docker
+- create docker swarm cluster
+
+on node1 faas1:
+- install and deploy openfaas
+- install openfaas-cli
+- install portainer
 
 ## extra stuff
 
