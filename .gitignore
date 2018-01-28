@@ -1,6 +1,8 @@
+playground/
 template/
 build/
 .vagrant/
 *.log
 ops/id_rsa*
 ops/swarm.sh
+.DS_Store
